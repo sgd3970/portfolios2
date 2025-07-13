@@ -74,7 +74,7 @@ export const slugify = (text: string): string => {
 /**
  * Debounces function execution
  */
-export const debounce = <T extends (...args: any[]) => void>(
+export const debounce = <T extends (...args: unknown[]) => void>(
   func: T,
   wait: number
 ): ((...args: Parameters<T>) => void) => {
@@ -88,7 +88,7 @@ export const debounce = <T extends (...args: any[]) => void>(
 /**
  * Throttles function execution
  */
-export const throttle = <T extends (...args: any[]) => void>(
+export const throttle = <T extends (...args: unknown[]) => void>(
   func: T,
   limit: number
 ): ((...args: Parameters<T>) => void) => {

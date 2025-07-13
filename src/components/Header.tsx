@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { navigationData, companyInfo } from '@/data/mockData';
+import { navigationData } from '@/data/mockData';
 import { smoothScrollTo } from '@/utils/animations';
 import { NavigationItem } from '@/types';
 

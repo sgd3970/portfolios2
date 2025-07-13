@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { strengthsData } from '@/data/mockData';
-import { initScrollAnimations, createCounterAnimation } from '@/utils/animations';
 import { Strength } from '@/types';
 
 /**
@@ -48,9 +47,6 @@ const StrengthsSection: React.FC<StrengthsSectionProps> = ({
    * 컴포넌트 마운트 시 스크롤 애니메이션 초기화
    */
   useEffect(() => {
-    // 스크롤 애니메이션 초기화
-    initScrollAnimations();
-
     // Intersection Observer로 섹션 가시성 감지
     const observer = new IntersectionObserver(
       (entries) => {

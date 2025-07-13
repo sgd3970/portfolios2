@@ -94,7 +94,7 @@ export interface SectionData {
   id: string;
   title: string;
   subtitle?: string;
-  content: any;
+  content: unknown;
   order: number;
   visible: boolean;
 }
@@ -125,5 +125,5 @@ export interface AnimationConfig {
 export interface ModalState {
   isOpen: boolean;
   type?: string;
-  data?: any;
+  data?: unknown;
 } 
