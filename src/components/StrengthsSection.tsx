@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { strengthsData } from '@/data/mockData';
 import { Strength } from '@/types';
 
